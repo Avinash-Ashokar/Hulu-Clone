@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Header } from "../components/Header";
+import { Nav } from "../components/Nav";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <title> Hulu 2.0 </title>
       </Head>
       <Header />
+      <Nav />
     </div>
   );
 }
