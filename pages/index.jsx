@@ -1,11 +1,10 @@
 import Head from "next/head";
 import { Header } from "../components/Header";
 import { Nav } from "../components/Nav";
-import { Results } from "../components/Result";
 import requests from "../utils/requests";
+import { Results } from "../components/Results";
 
 export default function Home({ results }) {
-  console.log(results);
   return (
     <div className="">
       <Head>
@@ -13,7 +12,7 @@ export default function Home({ results }) {
       </Head>
       <Header />
       <Nav />
-      <Results />
+      <Results results={results} />
     </div>
   );
 }
